@@ -1,0 +1,121 @@
+.header {
+    color: rgb(7, 5, 22);
+    position: relative;
+    top: 20%;
+    left: 30%;
+}
+
+body {    
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    background-image: linear-gradient(to right, #f80612e5, #010a0786);
+          padding: 30px;
+   }
+   
+.heading-primary-main {
+    
+    transform: translate(-30%, 0%);
+    position: relative;
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 35px;
+
+}
+
+.heading-primary-sub {
+    transform: translate(-30%, 60%);
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;    
+    letter-spacing: 10px;
+/* 
+    animation-name: MoveInRight;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out; */
+
+}
+
+div:nth-child(2) {
+    transform: translate(0%, 100%);
+}
+
+#inp {
+    position: block;
+    position: relative;
+    transform: translate(0%, -50%);
+    background-color: rgb(242, 250, 245);
+
+
+    animation-name: MoveInLeft;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+
+}
+
+#add {
+    position: relative;
+    transform: translate(0%, -5%);
+    background-color: rgb(240, 233, 233);
+   
+    animation-name: MoveInRight;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+
+}
+
+#hours {
+    transform: translate(0%, 300%);
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 10px;
+
+    
+    animation-name: MoveInBottom;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes MoveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-500);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+@keyframes MoveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-500);
+
+    }
+}
+
+
+@keyframes MoveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(10);
+
+    }
+}
