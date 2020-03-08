@@ -4,7 +4,7 @@
           function sumit() {
         let text = parseInt(document.getElementById("inp").value) 
         let hours = document.getElementById("hours");
-        let numbers = [100,2]
+        let numbers = []
         
          numbers.push(text)
           total = numbers.reduce((number, text) => {
